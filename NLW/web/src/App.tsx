@@ -1,4 +1,5 @@
 import './styles/main.css';
+import './styles/style.css';
 import logoImg from './Assets/Logo-nlw-esports.svg';
 
 function App() {
@@ -6,11 +7,11 @@ function App() {
   <div className="max-w-[1344px] mx-auto flex flex-col items-center my-20">
     <img src={logoImg} alt="" />
 
-      <h1 className="text-6xl text-white font-black mt-20">
-        Seu <span className="bg-clip-text text-transparent bg-nlw-gradient">duo</span> está aqui.
-      </h1>
+    <h1 className="text-6xl text-white font-black mt-20">
+      Seu <span id='duo' className="bg-nlw-gradient text-clip text-transparent">duo</span> está aqui.
+    </h1>
 
-      <div className="grid grid-cols-6 gap-6 mt-20">
+    <div className="grid grid-cols-6 gap-6 mt-20">
 
         <a href="" className='relative rounded-lg overflow-hidden'>
           <img src="/game-1.png" alt=""/> 
@@ -59,13 +60,15 @@ function App() {
             <span className=" text-zinc-300 text-sm block">4 Anúncios</span>
           </div>
         </a>    
-      </div>
-
-
-
-
-
     </div>
+
+    <div className="pt-6 bg-nlw-gradient self-stretch rounded-lg mt-8 overflow-hidden">
+      <div className="bg-[#2A2634] px-8 py-6">
+        <strong>Não encontrou seu duo?</strong>
+        <span>Publique um anúncio para novos players!</span>
+      </div>
+    </div>
+  </div>
   )
 }
 export default App
